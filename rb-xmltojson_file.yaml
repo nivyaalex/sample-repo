@@ -1,0 +1,62 @@
+swagger: '2.0'
+info:
+  x-ibm-name: rb-xmltojson
+  title: rb-xmltojson
+  version: 1.0.0
+schemes:
+  - https
+host: $(catalog.host)
+basePath: /xmltojson
+consumes:
+  - application/xml
+produces:
+  - application/json
+security:
+- api-key-2: []
+  api-key-1: []
+securityDefinitions:
+  api-key-2:
+    type: apiKey
+    description: ""
+    in: header
+    name: X-IBM-Client-Secret
+  api-key-1:
+    type: apiKey
+    description: ""
+    in: header
+    name: X-IBM-Client-Id
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+      - parse:
+          version: 2.0.0
+          title: parse
+          parse-settings-reference:
+            default: apic-default-parsesettings
+      - xml-to-json:
+          title: xml-to-json
+          version: 2.0.0
+  gateway: datapower-api-gateway
+  phase: realized
+  type: rest
+paths:
+  /path-1:
+    parameters:
+      - $ref: '#/parameters/xmltojson'
+    post:
+      responses:
+        '200':
+          description: 200 OK
+tags: []
+parameters:
+  xmltojson:
+    name: xmltojson
+    required: true
+    in: body
+    schema:
+      type: object
+    description: xmltojson

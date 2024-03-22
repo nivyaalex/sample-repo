@@ -1,0 +1,200 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Airport
+  x-ibm-name: airport
+servers:
+  - url: /airport
+x-ibm-configuration:
+  cors:
+    enabled: true
+  gateway: datapower-api-gateway
+  type: rest
+  phase: realized
+  enforced: true
+  testable: true
+  assembly:
+    execute:
+      - map:
+          version: 2.0.0
+          title: map
+          inputs:
+            code:
+              schema:
+                type: string
+                title: IATA Code
+                maxLength: 3
+                minLength: 3
+              variable: request.parameters.code
+          outputs:
+            lambda-input:
+              schema:
+                $ref: '#/components/schemas/lambda-airport-input'
+              variable: message.body
+          actions:
+            - set: lambda-input.code
+              from: code
+      - invoke:
+          version: 2.2.0
+          title: invoke-weather
+          backend-type: detect
+          header-control:
+            type: blocklist
+            values: []
+          parameter-control:
+            type: allowlist
+            values: []
+          http-version: HTTP/1.1
+          timeout: 60
+          verb: GET
+          chunked-uploads: true
+          persistent-connection: true
+          cache-response: protocol
+          cache-ttl: 900
+          stop-on-error: []
+          websocket-upgrade: false
+          target-url: >-
+            https://api.weather.com/v3/wx/forecast/daily/5day?iataCode={code}&units=e&language=en-US&format=json&apiKey=860c90be159c42c98c90be159c92c91f
+          output: weather
+      - map:
+          version: 2.0.0
+          title: map
+          inputs:
+            lambda-output:
+              schema:
+                $ref: '#/components/schemas/lambda-output'
+              variable: lambda.body
+            weather-output:
+              schema:
+                $ref: '#/components/schemas/weather-output'
+              variable: weather.body
+          outputs:
+            response:
+              schema:
+                $ref: '#/components/schemas/airport-api-output'
+              variable: message.body
+              content: application/json
+          actions:
+            - set: response.name
+              from: lambda-output.name
+            - set: response.iata-code
+              from: lambda-output.iata-code
+            - set: response.country
+              from: lambda-output.country
+            - set: response.elevation
+              from: lambda-output.elevation
+            - set: response.latitude
+              from: lambda-output.latitude
+            - set: response.longitude
+              from: lambda-output.longitude
+            - set: response.windPhrase
+              from: weather-output.windPhrase
+            - set: response.windSpeed
+              from: weather-output.windSpeed
+            - set: response.weatherNarrative
+              from: weather-output.narrative
+          options:
+            mapEmulateV4EmptyJSONObject: false
+            mapEmulateV4DefaultRequiredProps: false
+            mapEnablePostProcessingJSON: false
+            mapReferenceLimit: 1
+            mapArrayFirstElementValue: true
+    finally: []
+  activity-log:
+    enabled: true
+    success-content: activity
+    error-content: payload
+paths:
+  /{code}:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/airport-api-output'
+    parameters:
+      - name: code
+        in: path
+        required: true
+        schema:
+          type: string
+          title: IATA Code
+          maxLength: 3
+          minLength: 3
+components:
+  securitySchemes:
+    clientID:
+      type: apiKey
+      in: header
+      name: X-IBM-Client-Id
+  responses: {}
+  requestBodies: {}
+  schemas:
+    lambda-airport-input:
+      title: Lambda Function schema
+      type: object
+      properties:
+        code:
+          type: string
+          title: IATA Code
+    lambda-output:
+      type: object
+      properties:
+        name:
+          title: Airport Name
+          type: string
+        iata-code:
+          title: IATA Code
+          type: string
+        country:
+          title: ISO Country Code
+          type: string
+        elevation:
+          title: Elevation
+          type: integer
+        latitude:
+          title: Latitude
+          type: number
+        longitude:
+          title: Longitude
+          type: number
+    weather-output:
+      type: object
+      properties:
+        windPhrase:
+          type: array
+        windSpeed:
+          type: array
+        narrative:
+          type: array
+    airport-api-output:
+      type: object
+      properties:
+        name:
+          title: Airport Name
+          type: string
+        iata-code:
+          title: IATA Code
+          type: string
+        country:
+          title: ISO Country Code
+          type: string
+        elevation:
+          title: Elevation
+          type: integer
+        latitude:
+          title: Latitude
+          type: number
+        longitude:
+          title: Longitude
+          type: number
+        windPhrase:
+          type: string
+        windSpeed:
+          type: number
+        weatherNarrative:
+          type: string
+security:
+  - clientID: []
