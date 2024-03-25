@@ -5,8 +5,6 @@ on: [pull_request, workflow_dispatch, push]
 env:
   API_HOST: d-t03.apiconnect.dev.automation.ibm.com
   PROVIDER_ORG: saas-test
-  # API_FILES: airport_file.json,rb-xmltojson_file.yaml
-  #API_FILES: gmail-api.json,mit-api.json,gmail-api.yaml,APIfolder/uber-api.json
   API_FOLDERS: MYAPIS
   
 jobs:
