@@ -41,7 +41,7 @@ jobs:
         provider_org: ${{ env.PROVIDER_ORG }}
         api_key: ${{ secrets.apicApikey }}
         # if: env.API_FOLDERS
-        api_folders: ${{ env.MYAPIS }}
+        api_folders: ${{ env.API_FOLDERS }}
         # resync_check: ${{ true }}
         resync_check: ${{ needs.check_changes_job.outputs.action_changed && true || false }}
         git_diff: ${{ steps.difference-output.outputs.action_updates }}
