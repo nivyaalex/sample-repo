@@ -25,11 +25,11 @@ jobs:
       id: check_workflow_changed
       run: |
         echo "action_updates=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.before }} ${{ github.sha }} | grep discover-api.yml | xargs)" >> $GITHUB_OUTPUT
-    - name: Changed API File Name
-      id: changed_filename
-      run: |
-        echo "api_file=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.before }} ${{ github.sha }} | xargs)" >> $GITHUB_OUTPUT
-        echo "apifiles_env=$(echo $API_FILES)" >> $GITHUB_OUTPUT
+    # - name: Changed API File Name
+    #   id: changed_filename
+    #   run: |
+    #     echo "api_file=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.before }} ${{ github.sha }} | xargs)" >> $GITHUB_OUTPUT
+    #     echo "apifiles_env=$(echo $API_FILES)" >> $GITHUB_OUTPUT
     - name: Check API Folders changed
       id: check_apifolders_changed
       run: |
