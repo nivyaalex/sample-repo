@@ -5,7 +5,7 @@ on: [pull_request, workflow_dispatch, push]
 env:
   API_HOST: d-t03.apiconnect.dev.automation.ibm.com
   PROVIDER_ORG: saas-test
-  #API_FILES: gmail-api.json
+  # API_FILES: airport_file.json,rb-xmltojson_file.yaml
   #API_FILES: gmail-api.json,mit-api.json,gmail-api.yaml,APIfolder/uber-api.json
   API_FOLDERS: MYAPIS
   
@@ -42,7 +42,7 @@ jobs:
         api_host: ${{ env.API_HOST }}
         provider_org: ${{ env.PROVIDER_ORG }}
         api_key: ${{ secrets.apicApikey }}
-        # if: env.API_FOLDERS
+        if: env.API_FOLDERS
         api_folders: ${{ env.API_FOLDERS }}
         # resync_check: ${{ true }}
         resync_check: ${{ needs.check_changes_job.outputs.action_changed && true || false }}
