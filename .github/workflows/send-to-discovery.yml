@@ -3,8 +3,8 @@ name: Send Discovered API to ApiConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: d-t03.apiconnect.dev.automation.ibm.com
-  PROVIDER_ORG: saas-test
+  API_HOST: fyre-ci-e2e-181623-master.fyre.ibm.com
+  PROVIDER_ORG: groot
   # API_FILES: airport_file.yaml,rb-xmltojson_file.yaml
   API_FOLDERS: MYAPIS
 
