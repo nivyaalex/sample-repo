@@ -3,7 +3,7 @@ name: Sync Discovered API with API Connect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: fyre-ci-e2e-181623-master.fyre.ibm.com
+  API_HOST: manager.fyre-ci-e2e-181623-master.fyre.ibm.com
   PROVIDER_ORG: groot
   API_FILES: MYAPIS
 
