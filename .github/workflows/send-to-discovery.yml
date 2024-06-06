@@ -6,8 +6,8 @@ env:
   API_HOST: dw-rosa-01.oweu.p1.openshiftapps.com
   PLATFORM_API_PREFIX: production-mgmt-platform-api-apic.apps
   PROVIDER_ORG: e2etest1
-  # API_FILES: airport_file.yaml,rb-xmltojson_file.yaml
-  API_FOLDERS: MYAPIS
+  API_FILES: airport_file.yaml
+  # API_FOLDERS: MYAPIS
 
 
 jobs:
