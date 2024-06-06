@@ -3,7 +3,7 @@ name: Send Discovered API to ApiConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: dw-rosa-01.oweu.p1.openshiftapps.com
+  API_HOST: apps.dw-rosa-01.oweu.p1.openshiftapps.com
   PROVIDER_ORG: e2etest1
   # API_FILES: airport_file.yaml,rb-xmltojson_file.yaml
   API_FOLDERS: MYAPIS
