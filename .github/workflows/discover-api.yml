@@ -3,7 +3,7 @@ name: Sync Discovered API with API Connect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: apps.dw-rosa-01.oweu.p1.openshiftapps.com
+  API_HOST: dw-rosa-01.oweu.p1.openshiftapps.com
   PROVIDER_ORG: e2etest1
   API_FILES: MYAPIS
 
