@@ -27,6 +27,7 @@ jobs:
         provider_org: ${{ env.PROVIDER_ORG }}
         api_key: ${{ secrets.apicApikey }}
         api_folders: ${{ env.API_FOLDERS }}
+        api_files: ${{ env.API_FILES }}
         resync_check: ${{ true }}
         git_diff: ${{ steps.difference-output.outputs.action_updates }}
     - name: Display the action-result
