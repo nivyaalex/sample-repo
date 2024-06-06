@@ -3,8 +3,8 @@ name: Sync Discovered API with API Connect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: api.fyre-ci-e2e-181623-master.fyre.ibm.com
-  PROVIDER_ORG: groot
+  API_HOST: apps.dw-rosa-01.oweu.p1.openshiftapps.com
+  PROVIDER_ORG: e2etest1
   API_FILES: MYAPIS
 
 jobs:
