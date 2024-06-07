@@ -7,7 +7,7 @@ env:
   PLATFORM_API_PREFIX: production-mgmt-platform-api-apic.apps
   INSECURE_SKIP_TLS_VERIFY: true
   PROVIDER_ORG: e2etest1
-  API_FILES: airport_file.yaml
+  API_FILES: MYAPIS/api-with-examples.yaml
   # API_FOLDERS: MYAPIS
 
 
