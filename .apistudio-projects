@@ -5,51 +5,60 @@ projects:
       - sample
       - API
     lastUpdated: 1777477856980
+    id: z7nz3cfj
   DPv6_Product_MultiAPI:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1777477856988
+    id: HQC9czxY
   DPv6_Product_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1777477856990
+    id: qpj0Z9rz
   DPv5c_Product_Order:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1777477856990
+    id: FS4XlV2n
   DPNano_Product_MultiAPI:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1777477856991
+    id: UMPdmaBj
   DPNano_Product_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1777477856992
+    id: WjLpPltB
   wM_APIKey_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1777477856994
+    id: voqviNLk
   wM_NoAuth_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1777477856994
+    id: MBRyMdwP
   wM_Product_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1777477856995
+    id: 9wFhWkHQ
