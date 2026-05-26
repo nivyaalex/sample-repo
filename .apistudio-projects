@@ -66,4 +66,11 @@ projects:
     id: ZHDnga7I
     description: ''
     tags: []
-    lastUpdated: 1779805408485
+    lastUpdated: 1779805958468
+  DPv5c_Product_Order-1:
+    id: CoAqUwGF
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1779805959493
