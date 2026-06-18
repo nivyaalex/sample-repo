@@ -6,7 +6,7 @@ metadata:
   version: '1.0'
   tags:
     - product
-  description: ''
+  description: sample product for v6
 spec:
   apis:
     - $ref: wM_Product_Weather:WeatherApi_wM:1.0
