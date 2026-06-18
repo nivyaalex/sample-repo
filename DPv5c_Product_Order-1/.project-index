@@ -1,4 +1,141 @@
 {
-  "nodes": [],
-  "edges": []
+  "nodes": [
+    {
+      "id": "20a6cea1-5720-416f-83f9-8404221442f3:0",
+      "projectId": "CoAqUwGF",
+      "filePath": "DPv5c_Product_Order-1/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1781785631155,
+      "schemaVersion": 1
+    },
+    {
+      "id": "365611c2-827b-497f-a222-6eeb042bcaf1:0",
+      "projectId": "CoAqUwGF",
+      "filePath": "DPv5c_Product_Order-1/echo-api-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1781785666051,
+      "schemaVersion": 1
+    },
+    {
+      "id": "60de160b-89a2-4d45-acb4-05cac3127e58:0",
+      "projectId": "CoAqUwGF",
+      "filePath": "DPv5c_Product_Order-1/assembly-echo-api.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1781785667421,
+      "schemaVersion": 1,
+      "kind": "DataPowerAssembly",
+      "name": "assembly-echo-api",
+      "namespace": "DPv5c_Product_Order-1",
+      "version": "1.0.0",
+      "contentHash": "a396a101292ddea1"
+    },
+    {
+      "id": "7d2a51fd-2497-45ae-ba33-0a5af678eac4:0",
+      "projectId": "CoAqUwGF",
+      "filePath": "DPv5c_Product_Order-1/cors-echo-api.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1781785666719,
+      "schemaVersion": 1,
+      "kind": "CORS",
+      "name": "cors-echo-api",
+      "namespace": "DPv5c_Product_Order-1",
+      "version": "1.0.0",
+      "contentHash": "07e4563d801bae7a"
+    },
+    {
+      "id": "fefca096-415c-4969-be4b-18c35e7d4f38:0",
+      "projectId": "CoAqUwGF",
+      "filePath": "DPv5c_Product_Order-1/echo-api.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1781785667940,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "echo-api",
+      "namespace": "DPv5c_Product_Order-1",
+      "version": "1.0.0",
+      "contentHash": "9f2bfd160e7d0508"
+    }
+  ],
+  "edges": [
+    {
+      "id": "2a75cc10-7a80-48fa-871a-e963ae4ac5ce",
+      "projectId": "CoAqUwGF",
+      "sourceNodeId": "fefca096-415c-4969-be4b-18c35e7d4f38:0",
+      "targetNodeId": "7d2a51fd-2497-45ae-ba33-0a5af678eac4:0",
+      "targetRefType": "same-project",
+      "targetRefString": "DPv5c_Product_Order-1:cors-echo-api:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1781785667950,
+      "lastValidated": 1781785667950
+    },
+    {
+      "id": "356efdbe-7821-49a5-a3de-61a0a56a7893",
+      "projectId": "CoAqUwGF",
+      "sourceNodeId": "fefca096-415c-4969-be4b-18c35e7d4f38:0",
+      "targetNodeId": "365611c2-827b-497f-a222-6eeb042bcaf1:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./echo-api-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1781785667950,
+      "lastValidated": 1781785667950
+    },
+    {
+      "id": "915f195e-6a38-425e-85bb-82203ac22eb9",
+      "projectId": "CoAqUwGF",
+      "sourceNodeId": "fefca096-415c-4969-be4b-18c35e7d4f38:0",
+      "targetNodeId": "60de160b-89a2-4d45-acb4-05cac3127e58:0",
+      "targetRefType": "same-project",
+      "targetRefString": "DPv5c_Product_Order-1:assembly-echo-api:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1781785667950,
+      "lastValidated": 1781785667950
+    },
+    {
+      "id": "acdbb983-0e1c-4c52-8ddd-993b5c9c8b6a",
+      "projectId": "CoAqUwGF",
+      "sourceNodeId": "365611c2-827b-497f-a222-6eeb042bcaf1:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "#/definitions/responseObject",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: #/definitions/responseObject",
+      "createdAt": 1781785666055,
+      "lastValidated": 1781785666055
+    },
+    {
+      "id": "e9ccd345-6e1d-4a56-96c8-5fd268b26376",
+      "projectId": "CoAqUwGF",
+      "sourceNodeId": "365611c2-827b-497f-a222-6eeb042bcaf1:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "#/parameters/text",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: #/parameters/text",
+      "createdAt": 1781785666054,
+      "lastValidated": 1781785666054
+    },
+    {
+      "id": "f8cecb36-5384-4e7e-b137-07160afecfbe",
+      "projectId": "CoAqUwGF",
+      "sourceNodeId": "60de160b-89a2-4d45-acb4-05cac3127e58:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "#/definitions/responseObject",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: #/definitions/responseObject",
+      "createdAt": 1781785667431,
+      "lastValidated": 1781785667431
+    }
+  ]
 }
