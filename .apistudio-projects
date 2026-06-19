@@ -55,13 +55,6 @@ projects:
       - API
     lastUpdated: 1777477856994
     id: MBRyMdwP
-  wM_Product_Weather:
-    id: 9wFhWkHQ
-    description: Sample project with API definitions and policies
-    tags:
-      - sample
-      - API
-    lastUpdated: 1781785616068
   studio-project:
     id: ZHDnga7I
     description: ''
