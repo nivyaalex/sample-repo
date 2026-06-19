@@ -9,7 +9,5 @@ metadata:
 spec:
   api-spec:
     $path: ./echo-api-spec-1.yml
-  cors:
-    $ref: DPv5c_Product_Order-3:cors-echo-api-1:1.0.0
   policy-sequence:
     - $ref: DPv5c_Product_Order-3:assembly-echo-api:1.0.0

@@ -1,0 +1,12 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: default
+  namespace: DPv5c_Product_Order-3
+  version: 1.0.0
+  tags:
+    - plan
+  description: ''
+spec:
+  qos:
+    withQuota: null

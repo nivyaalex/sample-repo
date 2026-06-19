@@ -47,13 +47,32 @@
       "contentHash": "62fa6c4ac219a70b"
     },
     {
-      "id": "9e2a2cc9-e7f7-4a35-ab4c-8143c38ec4c6:0",
+      "id": "5f7c17b9-50a9-4f94-96bc-a9ef8f1a6d35:0",
       "projectId": "FGBFYqGm",
-      "filePath": "DPv5c_Product_Order-3/echo-api-spec-1.yml",
+      "filePath": "DPv5c_Product_Order-3/echo-product.yaml",
       "docIndex": 0,
-      "assetType": "support",
-      "lastIndexed": 1781835308364,
-      "schemaVersion": 1
+      "assetType": "resource",
+      "lastIndexed": 1781835748185,
+      "schemaVersion": 1,
+      "kind": "Product",
+      "name": "echo-product",
+      "namespace": "DPv5c_Product_Order-3",
+      "version": "1.0.0",
+      "contentHash": "085f826f7e164097"
+    },
+    {
+      "id": "635b96e0-69b3-4f3b-a4f1-e04985e40e55:0",
+      "projectId": "FGBFYqGm",
+      "filePath": "DPv5c_Product_Order-3/default.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1781835769553,
+      "schemaVersion": 1,
+      "kind": "Plan",
+      "name": "default",
+      "namespace": "DPv5c_Product_Order-3",
+      "version": "1.0.0",
+      "contentHash": "af616c695cbf4638"
     },
     {
       "id": "a194362e-5bab-4c1c-bbf6-c441210e2afb:0",
@@ -61,27 +80,13 @@
       "filePath": "DPv5c_Product_Order-3/echo-api.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781835310575,
+      "lastIndexed": 1781835774559,
       "schemaVersion": 1,
       "kind": "API",
       "name": "echo-api",
       "namespace": "DPv5c_Product_Order-3",
       "version": "1.0.0",
-      "contentHash": "db331df4a9b4bdd8"
-    },
-    {
-      "id": "ed299c76-30cf-4070-86d4-fb91225af023:0",
-      "projectId": "FGBFYqGm",
-      "filePath": "DPv5c_Product_Order-3/cors-echo-api-1.yml",
-      "docIndex": 0,
-      "assetType": "resource",
-      "lastIndexed": 1781835309112,
-      "schemaVersion": 1,
-      "kind": "CORS",
-      "name": "cors-echo-api-1",
-      "namespace": "DPv5c_Product_Order-3",
-      "version": "1.0.0",
-      "contentHash": "36f4a1e3786c7d50"
+      "contentHash": "f8d6197a7ee7239f"
     }
   ],
   "edges": [
@@ -99,29 +104,28 @@
       "lastValidated": 1781835179743
     },
     {
-      "id": "3885bee5-51d2-4dd8-b2cf-ff662e670b8e",
+      "id": "11cbecaa-4a23-4bed-844d-108ac984fd7d",
       "projectId": "FGBFYqGm",
-      "sourceNodeId": "9e2a2cc9-e7f7-4a35-ab4c-8143c38ec4c6:0",
-      "targetNodeId": null,
+      "sourceNodeId": "5f7c17b9-50a9-4f94-96bc-a9ef8f1a6d35:0",
+      "targetNodeId": "a194362e-5bab-4c1c-bbf6-c441210e2afb:0",
       "targetRefType": "same-project",
-      "targetRefString": "#/definitions/responseObject",
-      "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/definitions/responseObject",
-      "createdAt": 1781835308371,
-      "lastValidated": 1781835308371
-    },
-    {
-      "id": "6486bebf-7d9e-43f8-b2e3-97edc48f5673",
-      "projectId": "FGBFYqGm",
-      "sourceNodeId": "a194362e-5bab-4c1c-bbf6-c441210e2afb:0",
-      "targetNodeId": "ed299c76-30cf-4070-86d4-fb91225af023:0",
-      "targetRefType": "same-project",
-      "targetRefString": "DPv5c_Product_Order-3:cors-echo-api-1:1.0.0",
+      "targetRefString": "DPv5c_Product_Order-3:echo-api:1.0.0",
       "targetRefKind": "resource",
       "isValid": true,
-      "createdAt": 1781835310583,
-      "lastValidated": 1781835310583
+      "createdAt": 1781835748188,
+      "lastValidated": 1781835774575
+    },
+    {
+      "id": "7bae32e6-bfb6-4805-98f6-5290d2f5575f",
+      "projectId": "FGBFYqGm",
+      "sourceNodeId": "5f7c17b9-50a9-4f94-96bc-a9ef8f1a6d35:0",
+      "targetNodeId": "635b96e0-69b3-4f3b-a4f1-e04985e40e55:0",
+      "targetRefType": "same-project",
+      "targetRefString": "DPv5c_Product_Order-3:default:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1781835748188,
+      "lastValidated": 1781835769567
     },
     {
       "id": "946974ce-1d6a-4cb9-92c0-03235d950630",
@@ -137,6 +141,19 @@
       "lastValidated": 1781835179743
     },
     {
+      "id": "a31ff462-81e9-4f65-838a-958b99f2d7c2",
+      "projectId": "FGBFYqGm",
+      "sourceNodeId": "a194362e-5bab-4c1c-bbf6-c441210e2afb:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "./echo-api-spec-1.yml",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: DPv5c_Product_Order-3/echo-api-spec-1.yml",
+      "createdAt": 1781835774561,
+      "lastValidated": 1781835774561
+    },
+    {
       "id": "ac844d89-72e8-4614-ba8f-0eed53e79304",
       "projectId": "FGBFYqGm",
       "sourceNodeId": "a194362e-5bab-4c1c-bbf6-c441210e2afb:0",
@@ -147,31 +164,6 @@
       "isValid": true,
       "createdAt": 1781835310583,
       "lastValidated": 1781835310583
-    },
-    {
-      "id": "d7433714-0af7-44b2-bd8e-75b4311baa0f",
-      "projectId": "FGBFYqGm",
-      "sourceNodeId": "a194362e-5bab-4c1c-bbf6-c441210e2afb:0",
-      "targetNodeId": "9e2a2cc9-e7f7-4a35-ab4c-8143c38ec4c6:0",
-      "targetRefType": "same-project",
-      "targetRefString": "./echo-api-spec-1.yml",
-      "targetRefKind": "support",
-      "isValid": true,
-      "createdAt": 1781835310586,
-      "lastValidated": 1781835310586
-    },
-    {
-      "id": "f0692863-f037-44f5-a96b-bb6b4158e03e",
-      "projectId": "FGBFYqGm",
-      "sourceNodeId": "9e2a2cc9-e7f7-4a35-ab4c-8143c38ec4c6:0",
-      "targetNodeId": null,
-      "targetRefType": "same-project",
-      "targetRefString": "#/parameters/text",
-      "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/parameters/text",
-      "createdAt": 1781835308371,
-      "lastValidated": 1781835308371
     },
     {
       "id": "f0d6eb99-ae14-45f7-9395-2bec0d52729f",
