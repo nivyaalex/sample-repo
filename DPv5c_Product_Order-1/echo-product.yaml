@@ -1,0 +1,28 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: echo-product
+  namespace: DPv5c_Product_Order-1
+  version: 1.0.0
+  tags: []
+spec:
+  apis:
+    - $ref: DPv5c_Product_Order-1:echo-api:1.0.0
+    - $ref: DPv5_Product_BankA:BankAPI:1.0
+  plans:
+    - $ref: DPv5c_Product_Order-1:default:1.0.0
+  extensions:
+    portal-config:
+      apiVersion: api.ibm.com/v1
+      spec:
+        visibility:
+          view:
+            type: public
+            orgs: []
+            enabled: true
+            tags: []
+          subscribe:
+            type: authenticated
+            orgs: []
+            enabled: true
+            tags: []
