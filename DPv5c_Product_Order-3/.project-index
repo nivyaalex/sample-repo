@@ -1,18 +1,13 @@
 {
   "nodes": [
     {
-      "id": "20d911e0-f0ab-4587-a730-8a1808560834:0",
+      "id": "06332215-577f-4331-ae2f-2ea7d0a76643:0",
       "projectId": "FGBFYqGm",
-      "filePath": "DPv5c_Product_Order-3/assembly-echo-api.yml",
+      "filePath": "DPv5c_Product_Order-3/.project-index",
       "docIndex": 0,
-      "assetType": "resource",
-      "lastIndexed": 1781835181760,
-      "schemaVersion": 1,
-      "kind": "DataPowerAssembly",
-      "name": "assembly-echo-api",
-      "namespace": "DPv5c_Product_Order-3",
-      "version": "1.0.0",
-      "contentHash": "62fa6c4ac219a70b"
+      "assetType": "support",
+      "lastIndexed": 1781835237572,
+      "schemaVersion": 1
     },
     {
       "id": "41de877f-75f7-418c-8e1e-df2af8fc2824:0",
@@ -36,20 +31,6 @@
       "namespace": "DPv5c_Product_Order-3",
       "version": "1.0.0",
       "contentHash": "a88e13813a997d32"
-    },
-    {
-      "id": "5e2586db-2506-49d2-b563-2e09754e8bba:0",
-      "projectId": "FGBFYqGm",
-      "filePath": "DPv5c_Product_Order-3/echo-api.yaml",
-      "docIndex": 0,
-      "assetType": "resource",
-      "lastIndexed": 1781835182587,
-      "schemaVersion": 1,
-      "kind": "API",
-      "name": "echo-api",
-      "namespace": "DPv5c_Product_Order-3",
-      "version": "1.0.0",
-      "contentHash": "a8e0965731257727"
     }
   ],
   "edges": [
@@ -67,18 +48,6 @@
       "lastValidated": 1781835179743
     },
     {
-      "id": "3422e24f-dd07-4fc4-85cd-af15b048a275",
-      "projectId": "FGBFYqGm",
-      "sourceNodeId": "5e2586db-2506-49d2-b563-2e09754e8bba:0",
-      "targetNodeId": "20d911e0-f0ab-4587-a730-8a1808560834:0",
-      "targetRefType": "same-project",
-      "targetRefString": "DPv5c_Product_Order-3:assembly-echo-api:1.0.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1781835182593,
-      "lastValidated": 1781835182593
-    },
-    {
       "id": "946974ce-1d6a-4cb9-92c0-03235d950630",
       "projectId": "FGBFYqGm",
       "sourceNodeId": "41de877f-75f7-418c-8e1e-df2af8fc2824:0",
@@ -90,43 +59,6 @@
       "invalidReason": "Target file not found: #/definitions/responseObject",
       "createdAt": 1781835179743,
       "lastValidated": 1781835179743
-    },
-    {
-      "id": "acec421c-9fe5-46a9-9c3f-6ed4c37c90d1",
-      "projectId": "FGBFYqGm",
-      "sourceNodeId": "5e2586db-2506-49d2-b563-2e09754e8bba:0",
-      "targetNodeId": "4b35ca1a-9abd-4f79-ba78-4b6bbee0dfb5:0",
-      "targetRefType": "same-project",
-      "targetRefString": "DPv5c_Product_Order-3:cors-echo-api:1.0.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1781835182593,
-      "lastValidated": 1781835182593
-    },
-    {
-      "id": "dc14f062-4684-4bf2-9152-15833aaac1db",
-      "projectId": "FGBFYqGm",
-      "sourceNodeId": "20d911e0-f0ab-4587-a730-8a1808560834:0",
-      "targetNodeId": null,
-      "targetRefType": "same-project",
-      "targetRefString": "#/definitions/responseObject",
-      "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/definitions/responseObject",
-      "createdAt": 1781835181769,
-      "lastValidated": 1781835181769
-    },
-    {
-      "id": "e71eb6ae-5c38-45e2-8914-63069ee5e83e",
-      "projectId": "FGBFYqGm",
-      "sourceNodeId": "5e2586db-2506-49d2-b563-2e09754e8bba:0",
-      "targetNodeId": "41de877f-75f7-418c-8e1e-df2af8fc2824:0",
-      "targetRefType": "same-project",
-      "targetRefString": "./echo-api-spec.yml",
-      "targetRefKind": "support",
-      "isValid": true,
-      "createdAt": 1781835182593,
-      "lastValidated": 1781835182593
     }
   ]
 }
