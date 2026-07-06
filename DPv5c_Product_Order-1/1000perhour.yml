@@ -1,0 +1,14 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: 1000perhour
+  namespace: DPv5c_Product_Order-1
+  version: 1.0.0
+  tags:
+    - plan
+  description: ''
+spec:
+  qos:
+    withQuota:
+      plan-limit:
+        - $ref: DPv5c_Product_Order-1:rate-limit-1:1.0.0

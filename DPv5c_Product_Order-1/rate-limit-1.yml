@@ -1,0 +1,16 @@
+kind: Quota
+apiVersion: api.ibm.com/v1
+metadata:
+  name: rate-limit-1
+  namespace: DPv5c_Product_Order-1
+  version: 1.0.0
+  description: ''
+  tags: []
+spec:
+  maxRequest: 200
+  interval: 5m
+  extensions:
+    dp-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        onLimitReach: block

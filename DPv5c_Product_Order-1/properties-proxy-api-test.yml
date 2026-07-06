@@ -1,0 +1,12 @@
+kind: Properties
+apiVersion: api.ibm.com/v1
+metadata:
+  name: properties-proxy-api-test
+  namespace: DPv5c_Product_Order-1
+  version: 1.0.0
+  tags: []
+spec:
+  target-url:
+    value: https://reqres.in/api/
+    description: URL of the proxy policy
+    encoded: false
