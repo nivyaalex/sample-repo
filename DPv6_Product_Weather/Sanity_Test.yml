@@ -3,12 +3,12 @@ apiVersion: api.ibm.com/v1
 metadata:
   namespace: DPv6_Product_Weather
   name: Sanity_Test
-  version: "1.0"
+  version: '1.0'
   tags:
     - sanity-test
 spec:
   api:
-    $ref: DPv6_Product_Weather:WeatherApi:1.0
+    $ref: DPv6_Product_Weather:WeatherApi:1.1
   environment:
     $ref: DPv6_Product_Weather:Default_Environment:1.0
   request:

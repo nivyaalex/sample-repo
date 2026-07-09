@@ -20,13 +20,13 @@
       "filePath": "DPNano_Product_Weather/WeatherApi_Nano.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785521011,
+      "lastIndexed": 1783619168339,
       "schemaVersion": 1,
       "kind": "API",
       "name": "WeatherApi_Nano",
       "namespace": "DPNano_Product_Weather",
       "version": "1",
-      "contentHash": "f5b61220c55768f8"
+      "contentHash": "e3ce827af0df2588"
     },
     {
       "id": "1a6ed816-cf28-43ba-80d5-7c40e01ebd78:0",
@@ -34,13 +34,13 @@
       "filePath": "DPNano_Product_Weather/DPNano_Product.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520991,
+      "lastIndexed": 1783619168348,
       "schemaVersion": 1,
       "kind": "Product",
       "name": "dpnano-weather",
       "namespace": "dpnano_product_weather",
       "version": "1",
-      "contentHash": "79309d4fac76e09d"
+      "contentHash": "f637f6c65a97ce64"
     },
     {
       "id": "2b37adf2-ab64-4ba9-b1df-d32c5158b2a9:0",
@@ -48,13 +48,13 @@
       "filePath": "DPNano_Product_Weather/DPNano_Uri.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520999,
+      "lastIndexed": 1783619168349,
       "schemaVersion": 1,
       "kind": "URISchemes",
       "name": "DPNano_Uri",
       "namespace": "DPNano_Product_Weather",
       "version": "1",
-      "contentHash": "89b75b381853cdc3"
+      "contentHash": "24225111c64fa389"
     },
     {
       "id": "35c26aed-1c18-45b3-8083-145569743809:0",
@@ -113,18 +113,27 @@
       "contentHash": "3a0c8de79bf51f93"
     },
     {
+      "id": "7a0a4dd7-0d59-4e7b-81f3-e14330c3ae36:0",
+      "projectId": "WjLpPltB",
+      "filePath": "DPNano_Product_Weather/README.md",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1783619168338,
+      "schemaVersion": 1
+    },
+    {
       "id": "9d0b713c-4b05-4b53-8312-4bb15adfb80c:0",
       "projectId": "WjLpPltB",
       "filePath": "DPNano_Product_Weather/GET-air-temperature-200.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785521001,
+      "lastIndexed": 1783619168348,
       "schemaVersion": 1,
       "kind": "assertion",
       "name": "GET-air-temperature-200",
       "namespace": "DPNano_Product_Weather",
       "version": "1.0",
-      "contentHash": "4c799229be82f913"
+      "contentHash": "57eb001da3f8e3f0"
     },
     {
       "id": "a7a09c8b-3dc2-437b-aea5-29dc043f282f:0",
@@ -136,18 +145,27 @@
       "schemaVersion": 1
     },
     {
+      "id": "ae899756-8d25-4259-95a4-7038ebae0807:0",
+      "projectId": "WjLpPltB",
+      "filePath": "DPNano_Product_Weather/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1783619168337,
+      "schemaVersion": 1
+    },
+    {
       "id": "b791a628-b827-4b7a-9759-27c26cc137bb:0",
       "projectId": "WjLpPltB",
       "filePath": "DPNano_Product_Weather/weather-environment.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785521019,
+      "lastIndexed": 1783619168338,
       "schemaVersion": 1,
       "kind": "environment",
       "name": "weather-environment",
       "namespace": "DPNano_Product_Weather",
       "version": "1.0",
-      "contentHash": "e59858dc22a50302"
+      "contentHash": "20bce6da2b281ed4"
     },
     {
       "id": "cd956514-0bb4-47a8-85c8-c4319c0b1da8:0",
@@ -183,13 +201,13 @@
       "filePath": "DPNano_Product_Weather/DPNano_Cors.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520979,
+      "lastIndexed": 1783619168348,
       "schemaVersion": 1,
       "kind": "CORS",
       "name": "DPNano_Cors",
       "namespace": "DPNano_Product_Weather",
       "version": "1",
-      "contentHash": "3157c6177ef371ed"
+      "contentHash": "ee8737aed4ca76c7"
     },
     {
       "id": "ffe46547-1440-4a21-b080-9d253d40f26b:0",
@@ -223,13 +241,13 @@
       "id": "2aab1479-c717-45c7-b1d8-d0c80d08f5b4",
       "projectId": "WjLpPltB",
       "sourceNodeId": "1a6ed816-cf28-43ba-80d5-7c40e01ebd78:0",
-      "targetNodeId": "a20f234a-2fa7-4678-b56d-11aae970bcb6:0",
-      "targetRefType": "cross-project",
+      "targetNodeId": "15baf934-cb50-4692-a1bc-dc7a592d0c10:0",
+      "targetRefType": "same-project",
       "targetRefString": "DPNano_Product_Weather:WeatherApi_Nano:1",
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1781785520992,
-      "lastValidated": 1781785520992
+      "lastValidated": 1783619148244
     },
     {
       "id": "56cd750b-63ca-4127-95b5-522130560436",
@@ -247,51 +265,49 @@
       "id": "58ca4d1f-8b3b-40ef-a273-5c80d3e88f95",
       "projectId": "WjLpPltB",
       "sourceNodeId": "ffe46547-1440-4a21-b080-9d253d40f26b:0",
-      "targetNodeId": "e4c8384c-7229-4335-aba4-781a717f34cf:0",
-      "targetRefType": "cross-project",
+      "targetNodeId": "35c26aed-1c18-45b3-8083-145569743809:0",
+      "targetRefType": "same-project",
       "targetRefString": "DPNano_Product_Weather:DPNano_Telemetry:1.0",
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1781785520989,
-      "lastValidated": 1781785520989
+      "lastValidated": 1783619148249
     },
     {
       "id": "6a5a10f8-bba9-4cca-8580-55d3f4dfe513",
       "projectId": "WjLpPltB",
       "sourceNodeId": "a7a09c8b-3dc2-437b-aea5-29dc043f282f:0",
-      "targetNodeId": null,
+      "targetNodeId": "a7a09c8b-3dc2-437b-aea5-29dc043f282f:0",
       "targetRefType": "same-project",
       "targetRefString": "#/components/schemas/ApiInfo",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/components/schemas/ApiInfo",
+      "isValid": true,
       "createdAt": 1781785521007,
-      "lastValidated": 1781785521007
+      "lastValidated": 1783619148183
     },
     {
       "id": "6c63d404-929a-43d6-bce3-94900506f354",
       "projectId": "WjLpPltB",
       "sourceNodeId": "a7a09c8b-3dc2-437b-aea5-29dc043f282f:0",
-      "targetNodeId": null,
+      "targetNodeId": "a7a09c8b-3dc2-437b-aea5-29dc043f282f:0",
       "targetRefType": "same-project",
       "targetRefString": "#/components/schemas/StationReading",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/components/schemas/StationReading",
+      "isValid": true,
       "createdAt": 1781785521007,
-      "lastValidated": 1781785521007
+      "lastValidated": 1783619148238
     },
     {
       "id": "6c900e08-8181-4d5e-b213-ced6cf7a48a7",
       "projectId": "WjLpPltB",
       "sourceNodeId": "4e6acd8f-becc-4964-b66f-99575c7f06ef:0",
-      "targetNodeId": "27a1cafd-a05a-4acb-b13f-1e4baeb1abbb:0",
-      "targetRefType": "cross-project",
+      "targetNodeId": "b791a628-b827-4b7a-9759-27c26cc137bb:0",
+      "targetRefType": "same-project",
       "targetRefString": "DPNano_Product_Weather:weather-environment:1.0",
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1781785520997,
-      "lastValidated": 1781785520997
+      "lastValidated": 1783619148355
     },
     {
       "id": "762a3e10-9494-4368-9fc8-2fe3a753d1de",
@@ -309,13 +325,13 @@
       "id": "8ea7cb3d-1eed-4d8f-951c-ba1b477b456a",
       "projectId": "WjLpPltB",
       "sourceNodeId": "4e6acd8f-becc-4964-b66f-99575c7f06ef:0",
-      "targetNodeId": "2924b571-a50e-4e29-bfe6-1589bb48e16a:0",
-      "targetRefType": "cross-project",
+      "targetNodeId": "9d0b713c-4b05-4b53-8312-4bb15adfb80c:0",
+      "targetRefType": "same-project",
       "targetRefString": "DPNano_Product_Weather:GET-air-temperature-200:1.0",
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1781785520998,
-      "lastValidated": 1781785520998
+      "lastValidated": 1783619148514
     },
     {
       "id": "a1594cab-62ad-4c47-8a4a-63d91b0c2719",
@@ -369,13 +385,13 @@
       "id": "c789c508-4a1d-414c-8f3e-4e2edfe7f36a",
       "projectId": "WjLpPltB",
       "sourceNodeId": "4e6acd8f-becc-4964-b66f-99575c7f06ef:0",
-      "targetNodeId": "a20f234a-2fa7-4678-b56d-11aae970bcb6:0",
-      "targetRefType": "cross-project",
+      "targetNodeId": "15baf934-cb50-4692-a1bc-dc7a592d0c10:0",
+      "targetRefType": "same-project",
       "targetRefString": "DPNano_Product_Weather:WeatherApi_Nano:1",
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1781785520998,
-      "lastValidated": 1781785520998
+      "lastValidated": 1783619148568
     },
     {
       "id": "ec8da459-1365-407b-9863-fad2c7e6d3d1",

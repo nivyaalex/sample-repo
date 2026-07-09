@@ -6,13 +6,13 @@
       "filePath": "DPv6_Product_Weather/Sanity_Test.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520907,
+      "lastIndexed": 1783619405272,
       "schemaVersion": 1,
       "kind": "test",
       "name": "Sanity_Test",
       "namespace": "DPv6_Product_Weather",
       "version": "1.0",
-      "contentHash": "061ce76fc5ba07ab"
+      "contentHash": "4d45dec6855aaebb"
     },
     {
       "id": "1b0148bf-4725-4a3e-97c2-86e7b398c0fd:0",
@@ -20,13 +20,13 @@
       "filePath": "DPv6_Product_Weather/Default_Environment.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520903,
+      "lastIndexed": 1783619356202,
       "schemaVersion": 1,
       "kind": "environment",
       "name": "Default_Environment",
       "namespace": "DPv6_Product_Weather",
       "version": "1.0",
-      "contentHash": "c0e1ed71b8e0e9ce"
+      "contentHash": "6f3f92d4308bb947"
     },
     {
       "id": "1bab9e91-b882-4e42-b64d-344a2208d919:0",
@@ -34,13 +34,13 @@
       "filePath": "DPv6_Product_Weather/DPv6_Quota.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520902,
+      "lastIndexed": 1783619356202,
       "schemaVersion": 1,
       "kind": "Quota",
       "name": "DPv6_Quota",
       "namespace": "DPv6_Product_Weather",
       "version": "1.0",
-      "contentHash": "db83e1502bd2333b"
+      "contentHash": "6f424197869ef641"
     },
     {
       "id": "3be0a1a9-cfff-4990-a80e-48859d1f915a:0",
@@ -52,12 +52,21 @@
       "schemaVersion": 1
     },
     {
+      "id": "9ce7ac56-71da-4e14-a96e-77eba8569acb:0",
+      "projectId": "qpj0Z9rz",
+      "filePath": "DPv6_Product_Weather/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1783619356201,
+      "schemaVersion": 1
+    },
+    {
       "id": "a10903bd-0045-4cce-b124-96559ab8a97d:0",
       "projectId": "qpj0Z9rz",
       "filePath": "DPv6_Product_Weather/DPv6_Plan.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520887,
+      "lastIndexed": 1783619420266,
       "schemaVersion": 1,
       "kind": "Plan",
       "name": "DPv6_Plan",
@@ -80,7 +89,7 @@
       "filePath": "DPv6_Product_Weather/WeatherApi.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520915,
+      "lastIndexed": 1783619390267,
       "schemaVersion": 1,
       "kind": "API",
       "name": "WeatherApi",
@@ -94,7 +103,7 @@
       "filePath": "DPv6_Product_Weather/DPv6_Product.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520898,
+      "lastIndexed": 1783619415270,
       "schemaVersion": 1,
       "kind": "Product",
       "name": "DPv6_Product",
@@ -108,13 +117,13 @@
       "filePath": "DPv6_Product_Weather/Basic_Assertion.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520877,
+      "lastIndexed": 1783619356201,
       "schemaVersion": 1,
       "kind": "assertion",
       "name": "Basic_Assertion",
       "namespace": "DPv6_Product_Weather",
       "version": "1.0",
-      "contentHash": "3c612567d65f568d"
+      "contentHash": "e7468453b0d02742"
     },
     {
       "id": "f3b5083a-31be-4b09-8a01-096124686829:0",
@@ -122,40 +131,16 @@
       "filePath": "DPv6_Product_Weather/DPv6_Assembly.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781785520879,
+      "lastIndexed": 1783619356202,
       "schemaVersion": 1,
       "kind": "DataPowerAssembly",
       "name": "DPv6_Assembly",
       "namespace": "DPv6_Product_Weather",
       "version": "1.0",
-      "contentHash": "bdbd0ea1b9f1319b"
+      "contentHash": "9590240249374f81"
     }
   ],
   "edges": [
-    {
-      "id": "085a025b-7400-4dfe-ae5e-bee0f02c60d0",
-      "projectId": "qpj0Z9rz",
-      "sourceNodeId": "d1879ae1-65d1-4722-a54e-56dcaeb25f22:0",
-      "targetNodeId": "d895901c-14c7-42b6-9e5b-c767d71c1461:0",
-      "targetRefType": "cross-project",
-      "targetRefString": "DPv6_Product_Weather:WeatherApi:1.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1781785520900,
-      "lastValidated": 1781785520900
-    },
-    {
-      "id": "0a3fc455-599d-4171-88ce-ba361b91d51e",
-      "projectId": "qpj0Z9rz",
-      "sourceNodeId": "a10903bd-0045-4cce-b124-96559ab8a97d:0",
-      "targetNodeId": "d895901c-14c7-42b6-9e5b-c767d71c1461:0",
-      "targetRefType": "cross-project",
-      "targetRefString": "DPv6_Product_Weather:WeatherApi:1.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1781785520890,
-      "lastValidated": 1781785520890
-    },
     {
       "id": "1bbb218a-c4d7-4105-9eb3-623162cd7a2e",
       "projectId": "qpj0Z9rz",
@@ -193,16 +178,41 @@
       "lastValidated": 1781785520908
     },
     {
+      "id": "43e46e0d-6170-4326-93c4-d148ff19c8f4",
+      "projectId": "qpj0Z9rz",
+      "sourceNodeId": "d1879ae1-65d1-4722-a54e-56dcaeb25f22:0",
+      "targetNodeId": "b791c5e8-50a9-4766-a8f6-2623a7cc8ca2:0",
+      "targetRefType": "same-project",
+      "targetRefString": "DPv6_Product_Weather:WeatherApi:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1783619415272,
+      "lastValidated": 1783619415272
+    },
+    {
       "id": "51d1f342-f593-4c12-a2e8-ca0f464f6068",
       "projectId": "qpj0Z9rz",
       "sourceNodeId": "a10903bd-0045-4cce-b124-96559ab8a97d:0",
-      "targetNodeId": "0b3f52b4-553f-4bad-b34f-1176d0164248:0",
-      "targetRefType": "cross-project",
+      "targetNodeId": "1bab9e91-b882-4e42-b64d-344a2208d919:0",
+      "targetRefType": "same-project",
       "targetRefString": "DPv6_Product_Weather:DPv6_Quota:1.0",
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1781785520890,
-      "lastValidated": 1781785520890
+      "lastValidated": 1783619148355
+    },
+    {
+      "id": "56e46a83-537f-47ba-b485-0302c85c027b",
+      "projectId": "qpj0Z9rz",
+      "sourceNodeId": "0ec823b6-bdc3-454e-8d90-935bd1708f7b:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "DPv6_Product_Weather:WeatherApi:1.1",
+      "targetRefKind": "resource",
+      "isValid": false,
+      "invalidReason": "Target resource not found: DPv6_Product_Weather:WeatherApi:1.1",
+      "createdAt": 1783619405275,
+      "lastValidated": 1783619405275
     },
     {
       "id": "66008a13-ce49-4914-96a9-b26572ffb5f4",
@@ -214,7 +224,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1781785520900,
-      "lastValidated": 1781785520900
+      "lastValidated": 1783619420273
     },
     {
       "id": "73679ffc-f09a-4033-817f-9046f825eaac",
@@ -232,39 +242,37 @@
       "id": "bbe17095-dc07-4fbe-9c57-d1d0753c9a08",
       "projectId": "qpj0Z9rz",
       "sourceNodeId": "3be0a1a9-cfff-4990-a80e-48859d1f915a:0",
-      "targetNodeId": null,
+      "targetNodeId": "3be0a1a9-cfff-4990-a80e-48859d1f915a:0",
       "targetRefType": "same-project",
       "targetRefString": "#/components/schemas/StationReading",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/components/schemas/StationReading",
+      "isValid": true,
       "createdAt": 1781785520913,
-      "lastValidated": 1781785520913
+      "lastValidated": 1783619148183
     },
     {
       "id": "d730583d-e46e-45ee-b20f-c8d7f700d221",
       "projectId": "qpj0Z9rz",
       "sourceNodeId": "3be0a1a9-cfff-4990-a80e-48859d1f915a:0",
-      "targetNodeId": null,
+      "targetNodeId": "3be0a1a9-cfff-4990-a80e-48859d1f915a:0",
       "targetRefType": "same-project",
       "targetRefString": "#/components/schemas/ApiInfo",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/components/schemas/ApiInfo",
+      "isValid": true,
       "createdAt": 1781785520913,
-      "lastValidated": 1781785520913
+      "lastValidated": 1783619148238
     },
     {
-      "id": "f3de8cb5-72e3-4807-a3b2-830b2ca8fb83",
+      "id": "eb81632e-1440-4db0-98e3-cc29dd483718",
       "projectId": "qpj0Z9rz",
-      "sourceNodeId": "0ec823b6-bdc3-454e-8d90-935bd1708f7b:0",
-      "targetNodeId": "d895901c-14c7-42b6-9e5b-c767d71c1461:0",
-      "targetRefType": "cross-project",
+      "sourceNodeId": "a10903bd-0045-4cce-b124-96559ab8a97d:0",
+      "targetNodeId": "b791c5e8-50a9-4766-a8f6-2623a7cc8ca2:0",
+      "targetRefType": "same-project",
       "targetRefString": "DPv6_Product_Weather:WeatherApi:1.0",
       "targetRefKind": "resource",
       "isValid": true,
-      "createdAt": 1781785520908,
-      "lastValidated": 1781785520908
+      "createdAt": 1783619420268,
+      "lastValidated": 1783619420268
     }
   ]
 }

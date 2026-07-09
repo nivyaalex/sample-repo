@@ -2,8 +2,8 @@ kind: API
 apiVersion: api.ibm.com/v1
 metadata:
   name: WeatherApi
-  namespace: DPv6_Product_Weather
   version: '1.0'
+  namespace: DPv6_Product_Weather
   tags: []
   type: REST
 spec:

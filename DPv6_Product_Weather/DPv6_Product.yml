@@ -6,7 +6,6 @@ metadata:
   version: '1.0'
   tags:
     - product
-  description: ''
 spec:
   apis:
     - $ref: DPv6_Product_Weather:WeatherApi:1.0
