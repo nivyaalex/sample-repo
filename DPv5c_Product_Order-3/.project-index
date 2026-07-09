@@ -38,13 +38,13 @@
       "filePath": "DPv5c_Product_Order-3/assembly-echo-api.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1781835309833,
+      "lastIndexed": 1783620693469,
       "schemaVersion": 1,
       "kind": "DataPowerAssembly",
       "name": "assembly-echo-api",
       "namespace": "DPv5c_Product_Order-3",
-      "version": "1.0.0",
-      "contentHash": "62fa6c4ac219a70b"
+      "version": "1.0.1",
+      "contentHash": "6db2a6e7fcb33cee"
     },
     {
       "id": "5f7c17b9-50a9-4f94-96bc-a9ef8f1a6d35:0",
@@ -80,13 +80,13 @@
       "filePath": "DPv5c_Product_Order-3/echo-api.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783620381026,
+      "lastIndexed": 1783620696392,
       "schemaVersion": 1,
       "kind": "API",
       "name": "echo-api",
       "namespace": "DPv5c_Product_Order-3",
       "version": "1.0.1",
-      "contentHash": "a5ef0ed5a165057a"
+      "contentHash": "76be53ed5f6f4732"
     }
   ],
   "edges": [
@@ -141,18 +141,6 @@
       "lastValidated": 1781835179743
     },
     {
-      "id": "ac844d89-72e8-4614-ba8f-0eed53e79304",
-      "projectId": "FGBFYqGm",
-      "sourceNodeId": "a194362e-5bab-4c1c-bbf6-c441210e2afb:0",
-      "targetNodeId": "4d66caf6-b819-40ae-98da-a93debe57ab3:0",
-      "targetRefType": "same-project",
-      "targetRefString": "DPv5c_Product_Order-3:assembly-echo-api:1.0.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1781835310583,
-      "lastValidated": 1781835310583
-    },
-    {
       "id": "c9d0277b-07e4-4452-a952-9536d9075e0b",
       "projectId": "FGBFYqGm",
       "sourceNodeId": "5f7c17b9-50a9-4f94-96bc-a9ef8f1a6d35:0",
@@ -162,7 +150,19 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1783620381400,
-      "lastValidated": 1783620381400
+      "lastValidated": 1783620696397
+    },
+    {
+      "id": "e0f176ac-2725-4615-9a0c-670999e722a6",
+      "projectId": "FGBFYqGm",
+      "sourceNodeId": "a194362e-5bab-4c1c-bbf6-c441210e2afb:0",
+      "targetNodeId": "4d66caf6-b819-40ae-98da-a93debe57ab3:0",
+      "targetRefType": "same-project",
+      "targetRefString": "DPv5c_Product_Order-3:assembly-echo-api:1.0.1",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1783620696393,
+      "lastValidated": 1783620696393
     },
     {
       "id": "f0d6eb99-ae14-45f7-9395-2bec0d52729f",

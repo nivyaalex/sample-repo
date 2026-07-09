@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  version: 1.0.0
+  version: 1.0.2
   title: Echo API
   x-ibm-name: echo-api
   contact:

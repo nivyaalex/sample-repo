@@ -3,7 +3,7 @@ apiVersion: api.ibm.com/v1
 metadata:
   name: assembly-echo-api
   namespace: DPv5c_Product_Order-3
-  version: 1.0.0
+  version: 1.0.1
   tags: []
 spec:
   x-ibm-configuration:
