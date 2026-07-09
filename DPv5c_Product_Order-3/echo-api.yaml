@@ -2,12 +2,12 @@ kind: API
 apiVersion: api.ibm.com/v1
 metadata:
   name: echo-api
-  version: 1.0.0
+  version: 1.0.1
   namespace: DPv5c_Product_Order-3
   tags: []
   type: REST
 spec:
   api-spec:
-    $path: ./echo-api-spec-1.yml
+    $path: ./echo-api-spec.yml
   policy-sequence:
     - $ref: DPv5c_Product_Order-3:assembly-echo-api:1.0.0

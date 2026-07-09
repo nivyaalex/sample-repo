@@ -5,10 +5,9 @@ metadata:
   namespace: DPv5c_Product_Order-3
   version: 1.0.0
   tags: []
-  description: ''
 spec:
   apis:
-    - $ref: DPv5c_Product_Order-3:echo-api:1.0.0
+    - $ref: DPv5c_Product_Order-3:echo-api:1.0.1
   plans:
     - $ref: DPv5c_Product_Order-3:default:1.0.0
   extensions:
